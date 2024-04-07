@@ -1,0 +1,43 @@
+.credit-card {
+  border-radius: 15px;
+  color: #fff;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  margin: 0 auto;
+  background-image: url(https://img.freepik.com/free-photo/black-credit-card-template-isolated-white-background-3d-illustration_118047-5062.jpg?size=626&ext=jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 400px;
+  text-align: left;
+}
+
+.credit-card__number-container {
+  padding-top: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.credit-card__number,
+.credit-card__name {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.credit-card__expiry-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-card__expiry,
+.credit-card__cvc {
+  margin-top: 20px;
+  font-size: 16px;
+}

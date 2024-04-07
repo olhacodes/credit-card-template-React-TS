@@ -1,0 +1,38 @@
+.form-input__wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-input__label {
+  color: #606060;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.form-input,
+.form-input:focus,
+.form-input:hover {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: color 0.15s, border-color 0.15s, outline-color 0.15s;
+  position: relative;
+  padding: 0 10px;
+}
+
+.invalid,
+.invalid:focus,
+.invalid:hover, .invalid:focus-visible {
+  color: #ff3333;
+  border-color: #ff3333;
+  outline-color: #ff3333;
+  padding: 0 10px;
+}
+
+.form-input__error {
+  color: #ff3333;
+  font-size: 12px;
+  transition: all 0.15s;
+}

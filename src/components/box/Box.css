@@ -1,0 +1,13 @@
+.box__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.box__content {
+  width: 100%;
+  max-width: 600px;
+  padding: 0 50px;
+}
