@@ -2,21 +2,15 @@ import React from 'react';
 
 import { CardType } from '../../types/card-type';
 import CardTypeIcons from '../icons/CardTypeIcons';
-import { CreditCardFormData } from '../form/credit-card-form/CreditCardForm';
+// import { CreditCardFormData } from '../form/credit-card-form/CreditCardForm';
 
 import './CreditCard.css';
 
-export interface CreditCardProps extends CreditCardFormData {
-  cardTypes: Array<CardType>;
-}
+// export interface CreditCardProps extends CreditCardFormData {
+//   cardTypes: Array<CardType>;
+// }
 
-const CreditCard: React.FC<CreditCardProps> = ({
-  cardholderName,
-  cardNumber,
-  cardMonth,
-  cvc,
-  cardTypes,
-}) => {
+const CreditCard = () => {
   const formatCardNumber = (number: number) => {
     const str = number.toString().replace(/\s/g, '');
     let formattedText = '';
@@ -28,7 +22,7 @@ const CreditCard: React.FC<CreditCardProps> = ({
 
   return (
     <div className='credit-card'>
-      <CardTypeIcons cardNumber={cardNumber} cardTypes={cardTypes} />
+      {/* <CardTypeIcons cardNumber={cardNumber} cardTypes={cardTypes} />
       <div className='credit-card__number-container'>
         <div className='credit-card__number'>
           {cardNumber ? formatCardNumber(cardNumber) : '#### #### #### ####'}
@@ -47,7 +41,7 @@ const CreditCard: React.FC<CreditCardProps> = ({
             : 'DATE'}
         </div>
         <div className='credit-card__cvc'>{cvc ? cvc : 'CVC'}</div>
-      </div>
+      </div> */}
     </div>
   );
 };
